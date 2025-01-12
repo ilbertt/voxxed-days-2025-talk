@@ -15,5 +15,8 @@
     "node": "^20",
     "pnpm": "^9",
     "npm": "please use pnpm"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.49.1"
   }
 }

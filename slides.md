@@ -26,7 +26,7 @@ download: true
 
 Luca Bertelli - ilbert
 
-<img src="./ic-logo.png" class="h-6 absolute bottom-5 left-5" />
+<img src="/ic-logo.png" class="h-6 absolute bottom-5 left-5" />
 
 <style>
 .slidev-layout {
