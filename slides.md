@@ -35,7 +35,12 @@ Luca Bertelli - ilbert
   color: #fff;
 }
 h1 {
-  background-image: none !important;
+  background-color: unset;
+  background-image: unset;
+  -webkit-background-clip: unset;
+  -moz-background-clip: unset;
+  -webkit-text-fill-color: currentColor;
+  -moz-text-fill-color: currentColor;
 }
 </style>
 
