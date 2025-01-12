@@ -1,0 +1,26 @@
+.slidev-layout {
+  height: 100%;
+  background: rgb(192,217,255);
+  background: linear-gradient(90deg, rgba(192,217,255,1) 0%, rgba(240,185,229,1) 100%);
+  color: #181818;
+}
+
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(90deg, #6485f1 10%, #c572ef 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.slidev-layout :not(pre) > code {
+  background-color: var(--slidev-code-background);
+  color: var(--slidev-code-foreground);
+}
+
+:root {
+  --slidev-code-background: rgba(101, 108, 118);
+  --slidev-code-foreground: rgb(209, 215, 224);
+}
