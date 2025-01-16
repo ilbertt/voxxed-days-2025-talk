@@ -134,51 +134,66 @@ How hard is it to build a POS app
 
 ---
 layout: two-cols-header
-class: "[&_li]:text-3xl [&_li]:mb-8"
+class: "[&_h1]:text-2xl"
 ---
 
-# Pain point: Authentication
+# Suffer no more!
+
+There's a solution for every challenge
+
+<br>
+<br>
 
 ::left::
 
-- Authentication providers
-- Permissions
-- Modularity
+<div class="relative">
+
+- Authentication
+
+- Integrations
+
+- Infrastructure management
+
+<mdi-arrow-right-thin v-click class="absolute size-8 right-0 top-1/2 -translate-y-1/2 mt-1" />
+
+</div>
 
 ::right::
 
-<figure class="w-full">
-  <img src="/auth-pain.png" class="w-full" />
-  <figcaption>
-    Security Issues and Future Challenges of Cloud Service Authentication - Scientific Figure on ResearchGate. Available from: <a href="https://www.researchgate.net/figure/Authentication-architecture-and-strategies_fig1_317213681" target="_blank">https://www.researchgate.net/figure/Authentication-architecture-and-strategies_fig1_317213681</a> [accessed 16 Jan 2025]
-  </figcaption>
-</figure>
+<div v-after class="mt-5">
+  <h1>Internet Identity</h1>
+  <h1>Chain-Key cryptography</h1>
+  <h1>Canisters</h1>
+</div>
 
 ---
+transition: fade
+layout: two-cols-header
+---
 
-# Pain point: Integrations
+# Authenticating the user - Internet Identity
+
+Let's integrate authentication in our app!
 
 ::left::
 
-- External providers
-- Centralization
-- Assets custody
+<div v-click>
+
+- Passwordless authentication
+
+- Privacy preserving
+
+- Zero management
+
+</div>
 
 ::right::
 
-<img src="/traditional-full-stack-app.png" class="absolute w-5/12 right-10 top-1/2 -translate-y-1/2">
+<div v-after>
 
----
+<img src="/internet-identity.webp" class="size-[280px] object-cover object-[50%_calc(50%-5px)] mx-auto" />
 
-# Pain point: Infrastructure
-
-::left::
-
-- Interoperability
-- Security
-- 
-
-::right::
+</div>
 
 ---
 layout: two-cols-header
@@ -187,7 +202,7 @@ class: "[&_h3]:text-center [&_h3]:mb-4"
 
 # Authenticating the user - Internet Identity
 
-Let's integrate authentication in our app!
+Show me the code
 
 ::left::
 
@@ -228,13 +243,19 @@ fn update_user(input: String) {
 </div>
 
 ---
+
+# Managing Payments - Chain-Key Cryptography
+
+Handle multiple crypto currencies in a secure way
+
+---
 layout: two-cols-header
 class: "[&_h3]:text-center [&_h3]:mb-4"
 ---
 
 # Managing Payments - Chain-Key Cryptography
 
-Handle multiple crypto currencies in a secure way
+Show me the code
 
 ::left::
 
@@ -310,6 +331,7 @@ class: text-center
 [Internet Identity](https://identity.ic0.app/)
 
 ---
+transition: fade
 layout: center
 class: text-center
 ---
@@ -321,6 +343,19 @@ class: text-center
 <br>
 
 [Oisy](https://oisy.com)
+
+---
+layout: center
+class: text-center
+---
+
+# Let's try it out now!
+
+<img src="/qr-openchat.png" class="qr-code-image" />
+
+<br>
+
+[OpenChat group](https://oc.app/group/tk4yx-liaaa-aaaac-agqwq-cai/?ref=23jsk-vqaaa-aaaar-acx3q-cai)
 
 ---
 layout: fact

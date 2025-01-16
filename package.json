@@ -17,6 +17,7 @@
     "npm": "please use pnpm"
   },
   "devDependencies": {
+    "@iconify-json/mdi": "^1.2.2",
     "playwright-chromium": "^1.49.1"
   }
 }
