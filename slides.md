@@ -111,7 +111,7 @@ Imagine you're building a full-stack app with a small team...
 
 # Where do we suffer together?
 
-The main pain points of this POS app
+How hard is it to build a POS app
 
 <br>
 <br>
@@ -133,25 +133,25 @@ The main pain points of this POS app
 />
 
 ---
+layout: two-cols-header
 class: "[&_li]:text-3xl [&_li]:mb-8"
 ---
 
 # Pain points: Authentication
 
-<br>
-<br>
-<br>
+::left::
 
 - Authentication providers
 - Permissions
 - Modularity
 
-<figure class="absolute w-2/5 right-10 top-1/2 -translate-y-1/2 [&>figcaption]:text-[0.5rem] [&>figcaption]:text-center [&>figcaption]:opacity-50">
-  <br>
-  <br>
-  <br>
+::right::
+
+<figure class="w-full">
   <img src="/auth-pain.png" class="w-full" />
-  <figcaption>Security Issues and Future Challenges of Cloud Service Authentication - Scientific Figure on ResearchGate. Available from: <a href="https://www.researchgate.net/figure/Authentication-architecture-and-strategies_fig1_317213681" target="_blank">https://www.researchgate.net/figure/Authentication-architecture-and-strategies_fig1_317213681</a> [accessed 16 Jan 2025]</figcaption>
+  <figcaption>
+    Security Issues and Future Challenges of Cloud Service Authentication - Scientific Figure on ResearchGate. Available from: <a href="https://www.researchgate.net/figure/Authentication-architecture-and-strategies_fig1_317213681" target="_blank">https://www.researchgate.net/figure/Authentication-architecture-and-strategies_fig1_317213681</a> [accessed 16 Jan 2025]
+  </figcaption>
 </figure>
 
 ---
@@ -232,10 +232,10 @@ class: text-center
 
 # Can I have the slides?
 
+<img src="/qr-slides.png" class="w-1/3 mx-auto mt-10" />
+
 <br>
 
-<img src="/qr-slides.png" class="w-1/3 mx-auto" />
+[Source code](https://github.com/ilbertt/voxxed-days-2025-talk)
 
-[kdn3b-iqaaa-aaaao-a3yqq-cai.icp0.io](https://kdn3b-iqaaa-aaaao-a3yqq-cai.icp0.io/)
-
-<PoweredBySlidev mt-10 />
+<PoweredBySlidev mt-4 />
