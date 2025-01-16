@@ -44,3 +44,9 @@ figcaption {
   text-align: center;
   opacity: 0.5;
 }
+
+.qr-code-image {
+  width: 33%;
+  margin: 0 auto;
+  margin-top: 2.5rem; /* 40px */
+}

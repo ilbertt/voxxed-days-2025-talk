@@ -102,8 +102,8 @@ Imagine you're building a full-stack app with a small team...
 ## Requirements
 
 - Login with privacy
-- Payment processing
-- ~1000 tx/s
+- Multi-chain crypto payments
+- No wallet extensions
 
 </div>
 
@@ -137,7 +137,7 @@ layout: two-cols-header
 class: "[&_li]:text-3xl [&_li]:mb-8"
 ---
 
-# Pain points: Authentication
+# Pain point: Authentication
 
 ::left::
 
@@ -155,42 +155,43 @@ class: "[&_li]:text-3xl [&_li]:mb-8"
 </figure>
 
 ---
-transition: fade
----
 
-# Where do we suffer together?
+# Pain point: Integrations
 
-<br>
-<br>
+::left::
 
-## Integrations
+- External providers
+- Centralization
+- Assets custody
 
-<img src="/traditional-full-stack-app.png" class="absolute w-5/12 right-10 top-1/2 -translate-y-1/2">
-
----
-transition: fade
----
-
-# Where do we suffer together?
-
-<br>
-<br>
-
-## · Infrastructure management
+::right::
 
 <img src="/traditional-full-stack-app.png" class="absolute w-5/12 right-10 top-1/2 -translate-y-1/2">
 
 ---
 
-# Authenticating the user
+# Pain point: Infrastructure
+
+::left::
+
+- Interoperability
+- Security
+- 
+
+::right::
+
+---
+layout: two-cols-header
+class: "[&_h3]:text-center [&_h3]:mb-4"
+---
+
+# Authenticating the user - Internet Identity
 
 Let's integrate authentication in our app!
 
-<div class="grid cols-2 mt-16 gap-x-16 gap-y-2 items-center [&>h3]:text-center">
+::left::
 
 ### Frontend
-
-### Backend
 
 ```ts
 import { AuthClient } from "@dfinity/auth-client";
@@ -205,6 +206,12 @@ authClient.login({
 backend.update_user("blabla");
 ```
 
+::right::
+
+<div v-click>
+
+### Backend
+
 ```rust
 use ic_cdk::{update, caller};
 
@@ -217,7 +224,103 @@ fn update_user(input: String) {
   // your business logic
 }
 ```
+
 </div>
+
+---
+layout: two-cols-header
+class: "[&_h3]:text-center [&_h3]:mb-4"
+---
+
+# Managing Payments - Chain-Key Cryptography
+
+Handle multiple crypto currencies in a secure way
+
+::left::
+
+### Backend
+
+```rust {all|10|14|all}
+use ic_cdk::{update, caller};
+use ic_cdk::api::management_canister::ecdsa::{
+  sign_with_ecdsa, SignWithEcdsaArgument,
+};
+
+#[update]
+async fn sign(message: String) {
+  let request = SignWithEcdsaArgument {
+    message_hash: sha256(&message).to_vec(),
+    derivation_path: vec![caller().into()], // <- (non-)custodial wallet
+    // ...
+  };
+
+  let (response,) = sign_with_ecdsa(request).await;
+
+  // your business logic
+}
+```
+
+::right::
+
+<div v-click>
+
+### Frontend
+
+```ts
+backend.sign("the transaction data");
+```
+
+</div>
+
+---
+transition: fade
+class: "[&_h2]:text-center [&_h2]:text-5xl"
+---
+
+# Managing Infrastructure - Internet Computer
+
+Keep the infrastructure up and running
+
+<div v-click class="absolute w-full left-0 top-1/2 -translate-y-1/2">
+
+## You don't have to worry :))
+
+</div>
+
+---
+
+# The Internet Computer
+
+Building on the shoulders of giants
+
+<img src="/icp-dashboard.png" />
+
+---
+transition: fade
+layout: center
+class: text-center
+---
+
+# Let's try it out now!
+
+<img src="/qr-identity.png" class="qr-code-image" />
+
+<br>
+
+[Internet Identity](https://identity.ic0.app/)
+
+---
+layout: center
+class: text-center
+---
+
+# Let's try it out now!
+
+<img src="/qr-oisy.png" class="qr-code-image" />
+
+<br>
+
+[Oisy](https://oisy.com)
 
 ---
 layout: fact
@@ -232,7 +335,7 @@ class: text-center
 
 # Can I have the slides?
 
-<img src="/qr-slides.png" class="w-1/3 mx-auto mt-10" />
+<img src="/qr-slides.png" class="qr-code-image" />
 
 <br>
 
