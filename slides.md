@@ -131,13 +131,39 @@ How hard is it to build a POS app
 />
 
 ---
+transition: fade
+---
+
+# Suffer no more!
+
+There's a solution for every challenge
+
+<div v-click class="w-[250px] h-[250px] side-image-container absolute left-20 bottom-32">
+  <img
+    src="/internet-identity.webp"
+    class="!h-[calc(100%+4px)] -mt-1"
+  />
+</div>
+
+<div v-click class="w-[300px] h-[220px] side-image-container absolute right-20 top-32">
+  <img
+    src="/chain-key-cryptography.webp"
+    class="!h-[calc(100%+4px)] -mt-1"
+  />
+</div>
+
+<div v-click class="w-[300px] h-[200px] side-image-container absolute left-1/2 -translate-x-1/2 bottom-10">
+  <img src="/canisters.webp" />
+</div>
+
+---
 layout: two-cols-header
 class: "[&_h1]:text-2xl [&_h1]:mb-3"
 ---
 
 # Suffer no more!
 
-There's a solution for every challenge
+Key ingredients
 
 <br>
 <br>
@@ -150,16 +176,16 @@ There's a solution for every challenge
 - Integrations
 - Infrastructure management
 
-<mdi-arrow-right-thin v-click class="absolute size-8 right-0 top-1/2 -translate-y-1/2 mt-1" />
+<mdi-arrow-right-thin class="absolute size-8 right-0 top-1/2 -translate-y-1/2 mt-1" />
 
 </div>
 
 ::right::
 
-<div v-after class="mt-1">
-  <h1>Internet Identity</h1>
-  <h1>Chain-Key cryptography</h1>
-  <h1>Canisters</h1>
+<div class="mt-1 [&_svg]:text-[#c572ef]">
+  <h1>Internet Identity <mdi-robot /></h1>
+  <h1>Chain-Key cryptography <mdi-key-variant /></h1>
+  <h1>Canisters <mdi-pail /></h1>
 </div>
 
 ---
@@ -258,9 +284,9 @@ Handle multiple crypto currencies in a secure way
 
 ::right::
 
-<div v-after class="w-[330px] h-[280px] side-image-container">
+<div v-after class="w-[450px] h-[230px] side-image-container">
   <img
-    src="/chain-key-signature.webp"
+    src="/chain-key-cryptography.webp"
     class="!h-[calc(100%+4px)] -mt-1"
   />
 </div>
@@ -305,7 +331,8 @@ async fn sign(message: String) {
 ### Frontend
 
 ```ts
-backend.sign("the transaction data");
+const transactionData = { /* ... */ };
+backend.sign(transaction);
 ```
 
 </div>
