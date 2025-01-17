@@ -345,12 +345,28 @@ Keep the infrastructure up and running
 </div>
 
 ---
+transition: fade
+---
 
 # The Internet Computer
 
 Building on the shoulders of giants
 
+<img src="/icp.png" />
+
+---
+
+# The Internet Computer
+
+37 subnets, 1300+ nodes
+
 <img src="/icp-dashboard.png" />
+
+<div class="text-center">
+
+[dashboard.internetcomputer.org](https://dashboard.internetcomputer.org/)
+
+</div>
 
 ---
 transition: fade
