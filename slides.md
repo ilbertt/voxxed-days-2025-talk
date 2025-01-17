@@ -180,19 +180,18 @@ Let's integrate authentication in our app!
 <div v-click>
 
 - Passwordless authentication
-
 - Privacy preserving
-
 - Zero management
 
 </div>
 
 ::right::
 
-<div v-after>
-
-<img src="/internet-identity.webp" class="size-[280px] object-cover object-[50%_calc(50%-5px)] mx-auto" />
-
+<div v-after class="w-[300px] h-[300px] side-image-container">
+  <img
+    src="/internet-identity.webp"
+    class="!h-[calc(100%+4px)] -mt-1"
+  />
 </div>
 
 ---
@@ -243,14 +242,36 @@ fn update_user(input: String) {
 </div>
 
 ---
+transition: fade
+layout: two-cols-header
+---
 
 # Managing Payments - Chain-Key Cryptography
 
 Handle multiple crypto currencies in a secure way
 
+::left::
+
+<div v-click>
+
+- Threshold signatures (34 nodes)
+- Derive one key per user
+- Multi-chain interaction
+
+</div>
+
+::right::
+
+<div v-after class="w-[330px] h-[280px] side-image-container">
+  <img
+    src="/chain-key-signature.webp"
+    class="!h-[calc(100%+4px)] -mt-1"
+  />
+</div>
+
 ---
 layout: two-cols-header
-class: "[&_h3]:text-center [&_h3]:mb-4"
+class: "-translate-y-10 [&_h3]:text-center [&_h3]:mb-4"
 ---
 
 # Managing Payments - Chain-Key Cryptography
@@ -271,7 +292,7 @@ use ic_cdk::api::management_canister::ecdsa::{
 async fn sign(message: String) {
   let request = SignWithEcdsaArgument {
     message_hash: sha256(&message).to_vec(),
-    derivation_path: vec![caller().into()], // <- (non-)custodial wallet
+    derivation_path: caller(), // <- (non-)custodial wallet
     // ...
   };
 
@@ -294,18 +315,23 @@ backend.sign("the transaction data");
 </div>
 
 ---
-transition: fade
-class: "[&_h2]:text-center [&_h2]:text-5xl"
+layout: two-cols-header
 ---
 
-# Managing Infrastructure - Internet Computer
+# Managing Infrastructure - Canisters
 
 Keep the infrastructure up and running
 
-<div v-click class="absolute w-full left-0 top-1/2 -translate-y-1/2">
+::left::
 
-## You don't have to worry :))
+- Stateful serverless
+- Interoperable
+- Certified data
 
+::right::
+
+<div v-after class="w-[450px] h-[250px] side-image-container">
+  <img src="/canisters.webp" />
 </div>
 
 ---
@@ -315,6 +341,20 @@ Keep the infrastructure up and running
 Building on the shoulders of giants
 
 <img src="/icp-dashboard.png" />
+
+---
+class: "[&_h2]:text-center [&_h2]:text-5xl"
+---
+
+# Managing Infrastructure
+
+Keep the infrastructure up and running
+
+<div v-click class="absolute w-full left-0 top-1/2 -translate-y-1/2 text-center">
+
+## Forget about infrastructure :))
+
+</div>
 
 ---
 transition: fade

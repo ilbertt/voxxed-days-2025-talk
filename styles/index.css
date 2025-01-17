@@ -50,3 +50,14 @@ figcaption {
   margin: 0 auto;
   margin-top: 2.5rem; /* 40px */
 }
+
+.side-image-container {
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.side-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
