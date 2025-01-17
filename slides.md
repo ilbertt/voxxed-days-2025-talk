@@ -64,12 +64,27 @@ Main focus:
 [github.com/ilbertt](https://github.com/ilbertt)
 
 ---
+transition: fade
+---
 
 # Common Developer Challenges
 
 Imagine you're building a full-stack app with a small team...
 
 <div v-click class="w-full flex items-center justify-center">
+  <img
+    src="/traditional-full-stack-app-empty.png"
+    class="w-5/12 aspect-square mt-2"
+  />
+</div>
+
+---
+
+# Common Developer Challenges
+
+Imagine you're building a full-stack app with a small team...
+
+<div class="w-full flex items-center justify-center">
   <img
     src="/traditional-full-stack-app.png"
     class="w-5/12 aspect-square mt-2"
@@ -138,22 +153,28 @@ transition: fade
 
 There's a solution for every challenge
 
-<div v-click class="w-[250px] h-[250px] side-image-container absolute left-20 bottom-32">
+<div v-click class="w-[250px] h-[250px] side-image-container absolute left-20 top-40">
   <img
     src="/internet-identity.webp"
     class="!h-[calc(100%+4px)] -mt-1"
   />
 </div>
 
-<div v-click class="w-[300px] h-[220px] side-image-container absolute right-20 top-32">
+<div v-click class="w-[300px] h-[220px] side-image-container absolute right-20 top-28">
   <img
     src="/chain-key-cryptography.webp"
     class="!h-[calc(100%+4px)] -mt-1"
   />
 </div>
 
-<div v-click class="w-[300px] h-[200px] side-image-container absolute left-1/2 -translate-x-1/2 bottom-10">
+<div v-click class="w-[300px] h-[200px] side-image-container absolute left-1/2 -translate-x-1/2 bottom-20">
   <img src="/canisters.webp" />
+</div>
+
+<div v-after class="absolute left-0 bottom-8 text-center w-full">
+
+### An astronaut, a key and a bucket walk into a bar...
+
 </div>
 
 ---
@@ -332,7 +353,7 @@ async fn sign(message: String) {
 
 ```ts
 const transactionData = { /* ... */ };
-backend.sign(transaction);
+backend.sign(transactionData);
 ```
 
 </div>
