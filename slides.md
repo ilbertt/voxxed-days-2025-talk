@@ -132,7 +132,7 @@ How hard is it to build a POS app
 
 ---
 layout: two-cols-header
-class: "[&_h1]:text-2xl"
+class: "[&_h1]:text-2xl [&_h1]:mb-3"
 ---
 
 # Suffer no more!
@@ -156,7 +156,7 @@ There's a solution for every challenge
 
 ::right::
 
-<div v-after class="mt-5">
+<div v-after class="mt-1">
   <h1>Internet Identity</h1>
   <h1>Chain-Key cryptography</h1>
   <h1>Canisters</h1>
@@ -331,14 +331,6 @@ Keep the infrastructure up and running
 </div>
 
 ---
-
-# The Internet Computer
-
-Building on the shoulders of giants
-
-<img src="/icp-dashboard.png" />
-
----
 class: "[&_h2]:text-center [&_h2]:text-5xl"
 ---
 
@@ -351,6 +343,14 @@ Keep the infrastructure up and running
 ## Forget about infrastructure :))
 
 </div>
+
+---
+
+# The Internet Computer
+
+Building on the shoulders of giants
+
+<img src="/icp-dashboard.png" />
 
 ---
 transition: fade
