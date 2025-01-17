@@ -119,9 +119,7 @@ How hard is it to build a POS app
 <v-clicks>
 
 - Authentication
-
 - Integrations
-
 - Infrastructure management
 
 </v-clicks>
@@ -149,9 +147,7 @@ There's a solution for every challenge
 <div class="relative">
 
 - Authentication
-
 - Integrations
-
 - Infrastructure management
 
 <mdi-arrow-right-thin v-click class="absolute size-8 right-0 top-1/2 -translate-y-1/2 mt-1" />
@@ -181,7 +177,7 @@ Let's integrate authentication in our app!
 
 - Passwordless authentication
 - Privacy preserving
-- Zero management
+- Multi device
 
 </div>
 
