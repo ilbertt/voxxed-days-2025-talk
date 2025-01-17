@@ -54,7 +54,7 @@ h1 {
 
 Main focus:
 
-- **Full-stack applications** - using Node.js, Rust, Python, JavaScript, React
+- **Full-stack applications** - using Node.js, Rust, Python, JavaScript (React)
 - **ICP Community** - publishing examples and libraries
 - **CodeGov** - decentralizing ICP governance
 
