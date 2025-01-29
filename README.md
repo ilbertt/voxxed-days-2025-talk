@@ -5,7 +5,8 @@
 ## Demo
 
 A presentation hosted on the Internet Computer is accessible at [https://kdn3b-iqaaa-aaaao-a3yqq-cai.icp0.io/](https://kdn3b-iqaaa-aaaao-a3yqq-cai.icp0.io/).
-The source code is available at [ilbertt/voxxed-days-2025-talk](https://github.com/ilbertt/voxxed-days-2025-talk).
+
+Live talk recording: [https://www.youtube.com/watch?v=HVR2953ntmU](https://www.youtube.com/watch?v=HVR2953ntmU).
 
 ## Getting started
 
